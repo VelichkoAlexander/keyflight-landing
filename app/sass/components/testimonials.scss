@@ -1,0 +1,64 @@
+.testimonials {
+  padding: 48px 0;
+}
+
+.testimonials__title {
+  margin-bottom: 56px;
+}
+
+.testimonials__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__item {
+  margin-bottom: 24px;
+}
+
+.testimonial {
+  padding: 10px 15px 10px 10px;
+  background: $testimonialGradient;
+  backdrop-filter: blur(54.3656px);
+  border-radius: 13px;
+}
+
+.testimonial__header {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.testimonial__info {
+  padding-left: 27px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/dest/ico-messages.svg) center/cover no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.testimonial__date {
+  color: $gray;
+}
+
+.testimonial__author {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+.testimonial__message {
+  font-size: 15px;
+  line-height: 1.33;
+}

@@ -1,13 +1,16 @@
 // USER VARIABLES SECTION
 
 $accent: #FECF89;
+$orange: #E97C7C;
 $fontsize: 16px;
 $black: #000;
 $white: #fff;
+$gray: #3f3f3f;
 $blue: #7CCAE9;
 $blue-2: #60AAC8;
 $lineheight: 1.65;
-$defaultGradient:  radial-gradient(50% 50% at 50% 50%, rgba(251, 201, 125, 0.3) 0%, rgba(255, 210, 143, 0.3) 100%);
+$defaultGradient: radial-gradient(50% 50% at 50% 50%, rgba(251, 201, 125, 0.3) 0%, rgba(255, 210, 143, 0.3) 100%);
+$testimonialGradient:  linear-gradient(0deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.54));
 
 //fonts
 $userfont: Roboto, sans-serif;
@@ -53,6 +56,8 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
+
+  background: url("../../img/dest/bg-footer.svg") bottom right no-repeat;
 }
 
 .container {
@@ -67,11 +72,19 @@ body {
   font-size: 28px;
   line-height: 1;
   text-align: center;
+
+  span {
+    display: block;
+  }
+}
+
+.description-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .description {
   padding: 7px 10px;
-  max-width: 231px;
   margin: 0 auto 56px;
   font-weight: 300;
   font-size: 18px;
@@ -79,6 +92,10 @@ body {
   text-align: center;
   background: $defaultGradient;
   border-radius: 4px;
+
+  span {
+    display: block;
+  }
 }
 
 .small-title {
@@ -86,4 +103,13 @@ body {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

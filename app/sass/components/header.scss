@@ -1,7 +1,7 @@
 .header {
   padding-top: 34px;
   padding-bottom: 69px;
-  background: url(../img/dest/bg_header.svg) center/cover no-repeat;
+  background: url('../img/dest/bg_header.svg') center/cover no-repeat;
 
   &__nav {
     display: flex;
@@ -18,6 +18,15 @@
     span {
       display: block;
     }
+  }
+
+  &__mobile-menu {
+    padding: 0;
+    font-size: 0;
+    width: 30px;
+    height: 26px;
+    background: url(../../img/dest/menu.svg) center/cover no-repeat;
+    border: none;
   }
 
   &__subtitle {

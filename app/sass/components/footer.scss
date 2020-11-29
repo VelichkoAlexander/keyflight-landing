@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 64px;
+  margin-bottom: 52px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.footer__item {
+  &:last-child {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.facebook-ico {
+  margin-right: 2px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 0;
+  background: url('../../img/dest/fb.svg') center/cover no-repeat;
+}
