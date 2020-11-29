@@ -1,0 +1,48 @@
+.reservation {
+  padding-top: 48px;
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.reservation__item {
+  &:not(:last-child) {
+    margin-bottom: 85px;
+  }
+}
+
+.reservation__small-title {
+  margin-bottom: 58px;
+}
+
+.reservation__btn-wrapper {
+  margin-top: 40px;
+  display: flex;
+
+  &--right {
+    margin-top: 60px;
+    justify-content: flex-end;
+  }
+}
+
+.reservation__img {
+  margin: 0 -16px;
+  display: flex;
+
+  &--right {
+    margin-top: -22px;
+    justify-content: flex-end;
+  }
+
+  &--left {
+    margin-top: -53px;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 13px 22px;
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $blue-2;
+    text-decoration: none;
+  }
+}
