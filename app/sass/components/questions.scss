@@ -1,5 +1,9 @@
 .questions {
   padding: 48px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 95px 0;
+  }
 }
 
 .questions__list {
@@ -11,6 +15,10 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 1.86;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
   }
 
   b {
@@ -22,6 +30,10 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.44;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
   }
 
   li {

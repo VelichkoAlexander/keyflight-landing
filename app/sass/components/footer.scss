@@ -1,6 +1,11 @@
 .footer {
   padding-top: 64px;
   margin-bottom: 52px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 135px;
+    margin-bottom: 15px;
+  }
 }
 
 .footer__wrapper {
@@ -10,6 +15,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .footer__item {

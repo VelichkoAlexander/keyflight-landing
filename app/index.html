@@ -26,8 +26,16 @@
         <div class="logo">
           <img src="img/dest/KF_logo.svg" alt="keyFlight logo">
         </div>
-
-        <button class="header__mobile-menu">menu</button>
+        <nav class="header__menu-wrapper">
+          <ul class="main-menu d-none d-lg-flex">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Our service</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Flight reservation</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Sample generator</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Remote work</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">FAQ</a></li>
+          </ul>
+          <button class="header__mobile-menu d-lg-none">menu</button>
+        </nav>
       </nav>
       <h1 class="header__title"><span>Welcome</span> to the World Without Borders</h1>
       <h2 class="header__subtitle">Make your way of travel easy</h2>
@@ -82,10 +90,13 @@
             </div>
           </div>
           <div class="reservation__img reservation__img--right">
-            <img src="img/dest/Illustration-1.svg" alt="">
+            <picture>
+              <source srcset="img/dest/Illustration-1-desktop.svg" media="(min-width: 920px)">
+              <img src="img/dest/Illustration-1.svg" alt="man">
+            </picture>
           </div>
         </div>
-        <div class="reservation__item">
+        <div class="reservation__item flex-row-reverse">
           <div class="reservation__content">
             <h3 class="reservation__small-title small-title">Visa</h3>
             <p>
@@ -104,7 +115,10 @@
             </div>
           </div>
           <div class="reservation__img reservation__img--left">
-            <img src="img/dest/Illustration-2.svg" alt="">
+            <picture>
+              <source srcset="img/dest/Illustration-2-desktop.svg" media="(min-width: 920px)">
+              <img src="img/dest/Illustration-2.svg" alt="girl">
+            </picture>
           </div>
         </div>
       </div>
@@ -389,31 +403,39 @@
   <section class="testimonials">
     <div class="container">
       <h2 class="title testimonials__title"><span>What our</span> customers say</h2>
-      <div class="testimonials__list">
-        <article class="testimonial testimonials__item">
-          <header class="testimonial__header">
-            <div class="testimonial__info">MESSAGES</div>
-            <div class="testimonial__date">now</div>
-          </header>
-          <div class="testimonial__author">Maya Keller</div>
-          <div class="testimonial__message">I must say I’m very glad that I find your website.</div>
-        </article>
-        <article class="testimonial testimonials__item">
-          <header class="testimonial__header">
-            <div class="testimonial__info">MESSAGES</div>
-            <div class="testimonial__date">yesterday</div>
-          </header>
-          <div class="testimonial__author">Anna Darovski</div>
-          <div class="testimonial__message">Very fast in delivering services ⚡</div>
-        </article>
-        <article class="testimonial testimonials__item">
-          <header class="testimonial__header">
-            <div class="testimonial__info">MESSAGES</div>
-            <div class="testimonial__date">yesterday</div>
-          </header>
-          <div class="testimonial__author">Saji Kang</div>
-          <div class="testimonial__message">Very swift and quick service, Excellent job!</div>
-        </article>
+      <div class="testimonials__list ">
+        <div class="row">
+          <div class="col-lg-4">
+            <article class="testimonial testimonials__item">
+              <header class="testimonial__header">
+                <div class="testimonial__info">MESSAGES</div>
+                <div class="testimonial__date">now</div>
+              </header>
+              <div class="testimonial__author">Maya Keller</div>
+              <div class="testimonial__message">I must say I’m very glad that I find your website.</div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="testimonial testimonials__item">
+              <header class="testimonial__header">
+                <div class="testimonial__info">MESSAGES</div>
+                <div class="testimonial__date">yesterday</div>
+              </header>
+              <div class="testimonial__author">Anna Darovski</div>
+              <div class="testimonial__message">Very fast in delivering services ⚡</div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="testimonial testimonials__item">
+              <header class="testimonial__header">
+                <div class="testimonial__info">MESSAGES</div>
+                <div class="testimonial__date">yesterday</div>
+              </header>
+              <div class="testimonial__author">Saji Kang</div>
+              <div class="testimonial__message">Very swift and quick service, Excellent job!</div>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
   </section>

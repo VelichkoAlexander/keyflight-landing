@@ -13,6 +13,10 @@
   background-color: $blue;
   color: $white;
 
+  @include media-breakpoint-up(lg) {
+    padding: 13px 37px;
+  }
+
   &:hover {
     color: $white;
     background-color: $blue-2;

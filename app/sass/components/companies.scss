@@ -2,10 +2,18 @@
   padding-top: 30px;
   padding-bottom: 48px;
 
+  @include media-breakpoint-up(lg) {
+    padding-top: 105px;
+    padding-bottom: 95px;
+  }
+
   &__wrapper {
     margin: 0 auto;
     max-width: 72%;
     width: 100%;
+    @include media-breakpoint-up(lg) {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -14,6 +22,10 @@
     font-size: 18px;
     line-height: 1.33;
     text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
 
     span {
       display: block;
@@ -31,9 +43,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+
+    li {
+      @include media-breakpoint-up(lg) {
+        padding: 0 21px;
+      }
+    }
+
 
     li:not(:last-child) {
       margin-bottom: 56px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -1,10 +1,18 @@
 .reservation {
   padding: 48px 0;
 
+  @include media-breakpoint-up(lg) {
+    padding: 95px 0;
+  }
+
   p {
     font-weight: 300;
     font-size: 14px;
-    line-height: 2;
+    line-height: 2.28;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
   }
 
   b {
@@ -15,20 +23,31 @@
 .reservation__item {
   &:not(:last-child) {
     margin-bottom: 85px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 171px;
+    }
   }
 
   @include media-breakpoint-up(lg) {
     display: flex;
-
-    & > * {
-      width: 50%;
-    }
+    justify-content: space-between;
   }
 }
 
 
 .reservation__small-title {
   margin-bottom: 58px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+}
+
+.reservation__content {
+  @include media-breakpoint-up(lg) {
+    max-width: 558px;
+  }
 }
 
 .reservation__btn-wrapper {
@@ -38,6 +57,10 @@
   &--right {
     margin-top: 60px;
     justify-content: flex-end;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -45,13 +68,26 @@
   margin: 0 -16px;
   display: flex;
 
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+
   &--right {
     margin-top: -22px;
     justify-content: flex-end;
+    @include media-breakpoint-up(lg) {
+      margin: 100px 0 0;
+      justify-content: flex-start;
+    }
   }
 
   &--left {
     margin-top: -53px;
     justify-content: flex-start;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+      justify-content: flex-start;
+    }
   }
 }

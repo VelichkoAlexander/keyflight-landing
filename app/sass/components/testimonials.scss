@@ -1,9 +1,17 @@
 .testimonials {
   padding: 48px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 95px 0;
+  }
 }
 
 .testimonials__title {
   margin-bottom: 56px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 80px;
+  }
 }
 
 .testimonials__list {
@@ -13,6 +21,10 @@
 
 .testimonials__item {
   margin-bottom: 24px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
 }
 
 .testimonial {
