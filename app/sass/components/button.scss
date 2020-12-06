@@ -19,3 +19,22 @@
     text-decoration: none;
   }
 }
+
+
+.btn-orange {
+  padding: 13px 22px;
+  background-color: $accent;
+  color: $black;
+  text-align: center;
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(0deg, #7CCAE9, #7CCAE9), #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.btn-big {
+  max-width: 221px;
+  width: 100%;
+}

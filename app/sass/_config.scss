@@ -10,7 +10,7 @@ $blue: #7CCAE9;
 $blue-2: #60AAC8;
 $lineheight: 1.65;
 $defaultGradient: radial-gradient(50% 50% at 50% 50%, rgba(251, 201, 125, 0.3) 0%, rgba(255, 210, 143, 0.3) 100%);
-$testimonialGradient:  linear-gradient(0deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.54));
+$testimonialGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.54));
 
 //fonts
 $userfont: Roboto, sans-serif;
@@ -22,10 +22,10 @@ $grid-gutter-width: 30px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
-
+@import "node_modules/swiper/swiper.scss";
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss';
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
 //@import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
@@ -63,6 +63,10 @@ body {
 .container {
   max-width: 100%;
   padding: 0 16px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 80px;
+  }
 }
 
 .title {
@@ -73,8 +77,16 @@ body {
   line-height: 1;
   text-align: center;
 
+  @include media-breakpoint-up(lg) {
+    font-size: 45px;
+  }
+
   span {
     display: block;
+
+    @include media-breakpoint-up(lg) {
+      display: inline;
+    }
   }
 }
 
@@ -93,8 +105,17 @@ body {
   background: $defaultGradient;
   border-radius: 4px;
 
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    margin-bottom: 79px;
+  }
+
   span {
     display: block;
+
+    @include media-breakpoint-up(lg) {
+      display: inline;
+    }
   }
 }
 

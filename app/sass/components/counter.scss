@@ -1,8 +1,21 @@
 .counter {
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 33px;
+    display: flex;
+    align-items: center;
+  }
+
   &__description {
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+      margin-right: 10px;
+      font-size: 24px;
+    }
   }
 
   &__value {
@@ -13,8 +26,16 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(251, 201, 125, 0.3) 0%, rgba(255, 210, 143, 0.3) 100%);
     border-radius: 4px;
 
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+
     b {
       font-weight: 500;
+
+      @include media-breakpoint-up(lg) {
+        font-weight: 700;
+      }
     }
   }
 }

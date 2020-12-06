@@ -16,7 +16,16 @@
   &:not(:last-child) {
     margin-bottom: 85px;
   }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+
+    & > * {
+      width: 50%;
+    }
+  }
 }
+
 
 .reservation__small-title {
   margin-bottom: 58px;

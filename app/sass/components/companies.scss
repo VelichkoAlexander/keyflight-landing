@@ -17,6 +17,10 @@
 
     span {
       display: block;
+
+      @include media-breakpoint-up(lg) {
+        display: inline;
+      }
     }
   }
 

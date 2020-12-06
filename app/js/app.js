@@ -1,8 +1,16 @@
-// import $ from 'jquery'; window.jQuery = $; window.$ = $ // import module example (npm i -D jquery)
-// require('./other_script.js') // Require Other Script(s) from app/js folder Example
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 
 document.addEventListener('DOMContentLoaded', () => {
-
-	// Custom JS
-
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 })

@@ -1,0 +1,36 @@
+.tariff-plans {
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 7px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba($black, 0.15);
+    border-radius: 50%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $black;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid $blue;
+  }
+
+  .swiper-button-prev {
+    background: url("../../img/dest/arrow-left.svg") center no-repeat;
+  }
+
+  .swiper-button-next {
+    transform: rotate(180deg);
+    background: url("../../img/dest/arrow-left.svg") center no-repeat;
+  }
+}
