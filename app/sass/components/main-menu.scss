@@ -4,10 +4,35 @@
   padding: 0;
   margin: 0;
 
+
+  @include media-breakpoint-down(md) {
+    transform: translateY(-100%);
+    width: 100%;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    position: fixed;
+    padding: 27px 0;
+    padding-top: 92px;
+    background-color: $white;
+    box-shadow: 0 1px 0 #dddfe0, 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+  }
+
+  &.active {
+    transform: translateY(0%);
+  }
+
   li:last-child {
     .main-menu__link {
       margin-right: 0;
     }
+  }
+}
+
+.main-menu__item {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 25px;
   }
 }
 
@@ -17,4 +42,15 @@
   line-height: 21px;
   text-decoration: none;
   padding: 0 25px;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+.logo,
+.header__mobile-menu {
+  position: relative;
+  z-index: 10;
 }
