@@ -4,7 +4,7 @@
   background: url('../img/dest/bg_header.svg') center/cover no-repeat;
 
   @include media-breakpoint-up(lg) {
-    background: url('../img/dest/bg-geader-desktop.svg') center top/cover no-repeat;
+    background: none;
     padding-bottom: 216px;
   }
 

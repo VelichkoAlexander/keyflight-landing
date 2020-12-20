@@ -1,4 +1,9 @@
 .tariff-plans {
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 95px;
+  }
+
   .swiper-pagination {
     display: flex;
     justify-content: center;

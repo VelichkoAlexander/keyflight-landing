@@ -60,7 +60,8 @@ body {
   background: url("../../img/dest/bg-footer.svg") bottom right no-repeat;
 
   @include media-breakpoint-up(lg) {
-    background: url("../../img/dest/bg-footer-desktop.svg") bottom right no-repeat;
+    background: url("../../img/dest/bg-footer-desktop.svg") bottom right no-repeat,
+    url('../img/dest/bg-geader-desktop.svg') center top/contain no-repeat;
   }
 }
 
